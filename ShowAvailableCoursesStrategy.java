@@ -9,7 +9,7 @@ public class ShowAvailableCoursesStrategy implements MenuStrategy {
 		return choosenOperation == 3;
 	}
 
-	public void run() {
+	public void run() {//
 		List<BaseCourse> courses = CourseRepository.getInstance().showAll();
 		for (BaseCourse przedmiot : courses) {
 			System.out.println(przedmiot);
